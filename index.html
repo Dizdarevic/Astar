@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    
+<script language="javascript" type="text/javascript" src="p5.js"></script>
+<script language="javascript" type="text/javascript" src="p5.dom.js"></script>
+    <script language="javascript" type="text/javascript" src="sketch.js"></script>
+</head>
+
+<body>
+  <h1>A*</h1>
+<!--    <body onload='setup()'>-->
+        # of Columns: <input type="text" id="columns" value="20"><br>
+        # of Rows: <input type="text" id="rows" value="20"><br>
+    
+        StartX: <input type="text" id="startX" value="2"><br>
+        StartY: <input type="text" id="startY" value="2"><br>
+        EndX: <input type="text" id="endX" value="9"><br>
+        EndY: <input type="text" id="endY" value="13"><br>
+    
+        Heuristic: <select id="whichHeuristic">
+                  <option value="first"   selected="selected">Manhattan</option>
+                  <option value="second">Euclidean</option>
+                  <option value="third">Chebyshev</option>
+                </select>
+        Speed: <select id="frameSpeed">
+                  <option value="slow"   selected="selected">Slow</option>
+                  <option value="medium">Medium</option>
+                  <option value="fast">Fast</option>
+                </select>
+    <input type="button" onclick="setValues()" value="Set Values"/><br>
+<!--    <canvas id="innerCanvas" width="400" height="400"></canvas>-->
+    <div id="heuDiv"></div>
+    <div id="valuesDiv"></div>
+    
+    
+    
+    <div id="c1"></div> <br>
+	<div id="c2"></div>
+</body>
+
+</html>
